@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF=8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="midasi">
+<h1>プログラム復習コンテンツ</h1>
+<a href="https://o-saringu.github.io/mokuji/">
+<div class="home"></div>
+</a>
+</div>
+
+<div class="oomidasi"><p>画像の読み込み、image()関数</div>
+
+<div class="yoko">
+	<div class="yoko1">
+	<div class="komidasi1"><p>サンプルコードの結果</p></div>
+	<img src = "7-1.png">
+	</div>
+	<div class="yoko1">
+	<div class="komidasi2"><p>サンプルコード</div>
+	<div class="code">　
+	<p>　　	PImage img1;
+	<p>　　	PImage img2;
+	<p>	
+	<p>　　	void setup(){
+	<p>　　	　size(480, 120);
+	<p>　　	　img1=loadImage("lunar.jpg");
+	<p>　　	　img2=loadImage("capsule.jpg"); 
+	<p>　　	｝
+	<p>　　	
+	<p>　　	void draw(){
+	<p>　　	　image(img1, -120, 0);
+	<p>　　	　image(img1, 130, 0, 240, 120);
+	<p>　　	　image(img2, 300, 0, 240, 120);
+	<p>　　	}　　	
+	</div>
+	</div>
+</div>
+
+<div class="komidasi3"><p>説明文</div>
+<div class="ep">
+	<p>　画像を表示させるためには、次の3ステップをまず行う。
+	<p>　①detaフォルダに画像を追加する。（画像データをコード画面にドロップ）
+	<p>　②画像を格納するためにPImage変数を作る。
+	<p>　③loadImage()を使ってその変数に画像を読み込む。
+	<p>　　
+	<p>　前述で画像データを読み込んだらimage()関数を用いて表示させる。
+	<p>　image(a, b, c, d, e);
+	<p>　a:読み込んだ画像の変数を指定する。
+	<p>　b:x座標
+	<p>　c:y座標
+	<p>　d:表示時のサイズの幅
+	<p>　e:表示時のサイズの高さ
+	<p>　dとeは必須項目ではなく、オプションである。指定しない場合は画像本来のサイズで表示される。
+	<p>
+	<p>　例では、複数の画像を読み込みサイズを変更することですべて表示させている。
+	<p>　※画像は例として授業時に配られたものを使用する。
+</div>
+</body>
+
